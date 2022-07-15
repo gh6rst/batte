@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: battufly
+  name: batte
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: battufly
+      app: batte
   template:
     metadata:
       labels:
-        app: battufly
+        app: batte
     spec:
       containers:
-      - image: okteto.dev/battufly:latest
-        name: battufly
+      - image: okteto.dev/batte:latest
+        name: batte
         ports:
         - containerPort: 8080
         env:
